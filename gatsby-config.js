@@ -137,10 +137,10 @@ module.exports = {
         // Set how many pages are retrieved per API request.
         perPage: 100,
         // Search and Replace Urls across WordPress content.
-        searchAndReplaceContentUrls: {
-          sourceUrl: "",
-          replacementUrl: "",
-        },
+        // searchAndReplaceContentUrls: {
+        //   sourceUrl: "",
+        //   replacementUrl: "",
+        // },
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 10,
         // Set WP REST API routes whitelists
