@@ -3,13 +3,13 @@ import React from "react"
 import Layout from "../components/Layout"
 
 import SEO from "../components/SEO"
-import { PageWrapper } from "./styles/PageStyles"
+import { PageWrapperStyles } from "./styles/PageStyles"
 import { Link } from "gatsby"
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <PageWrapper>
+    <PageWrapperStyles>
       <section className="container">
         <h1 className="title">NOT FOUND</h1>
         <h3>uppps...! try it again</h3>
@@ -17,7 +17,7 @@ const NotFoundPage = () => (
           <button className="cta-btn">Back to Homepage</button>
         </Link>
       </section>
-    </PageWrapper>
+    </PageWrapperStyles>
   </Layout>
 )
 

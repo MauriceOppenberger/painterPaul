@@ -5,12 +5,12 @@ import Layout from "../components/Layout"
 
 import SEO from "../components/SEO"
 
-import { PageWrapper } from "./styles/PageStyles"
+import { PageWrapperStyles } from "./styles/PageStyles"
 
 const Success = () => (
   <Layout>
     <SEO title="submission-page" />
-    <PageWrapper>
+    <PageWrapperStyles>
       <section className="container">
         <h1 className="title">Thanks for Submitting</h1>
         <h3>I will be in touch shortly</h3>
@@ -18,7 +18,7 @@ const Success = () => (
           <button className="cta-btn">Back to Homepage</button>
         </Link>
       </section>
-    </PageWrapper>
+    </PageWrapperStyles>
   </Layout>
 )
 
