@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://painterpaul.oppenberger.com",
+        host: "https://painter-paul.com",
         sitemap: "https://painterpaul.oppenberger.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
@@ -137,10 +137,10 @@ module.exports = {
         // Set how many pages are retrieved per API request.
         perPage: 100,
         // Search and Replace Urls across WordPress content.
-        // searchAndReplaceContentUrls: {
-        //   sourceUrl: "",
-        //   replacementUrl: "",
-        // },
+        searchAndReplaceContentUrls: {
+          sourceUrl: "https://source-url.com",
+          replacementUrl: "https://replacement-url.com",
+        },
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 10,
         // Set WP REST API routes whitelists
@@ -161,7 +161,7 @@ module.exports = {
           "**/taxonomies",
           "**/users",
           "**/menus",
-          // "**/logo",
+
           "**/favicon",
         ],
         // Blacklisted routes using glob patterns
@@ -189,7 +189,7 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
         // legacy: false,
-        crossOrigin: `use-credentials`,
+        // crossOrigin: `use-credentials`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
