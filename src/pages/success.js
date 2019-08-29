@@ -5,20 +5,20 @@ import Layout from "../components/Layout"
 
 import SEO from "../components/SEO"
 
-import { PageWrapperStyles } from "./styles/PageStyles"
+import { PageWrapper } from "../templates/styles/Page"
 
 const Success = () => (
   <Layout>
     <SEO title="submission-page" />
-    <PageWrapperStyles>
-      <section className="container">
+    <PageWrapper>
+      <section className="container" style={{ background: "#fff" }}>
         <h1 className="title">Thanks for Submitting</h1>
         <h3>I will be in touch shortly</h3>
         <Link className="btn-link" to="/">
           <button className="cta-btn">Back to Homepage</button>
         </Link>
       </section>
-    </PageWrapperStyles>
+    </PageWrapper>
   </Layout>
 )
 
