@@ -11,14 +11,24 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site, favicon } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
+            keywords
             author
+          }
+        }
+        favicon: allWordpressWpFavicon {
+          edges {
+            node {
+              url {
+                source_url
+              }
+            }
           }
         }
       }
@@ -40,8 +50,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `keywords`,
+          content: site.siteMetadata.keywords,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -61,13 +75,24 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
       ].concat(meta)}
+      link={[
+        {
+          rel: "shortcut icon",
+          type: "image/png",
+          href: `${
+            favicon.edges[0].node.url
+              ? favicon.edges[0].node.url.source_url
+              : null
+          }`,
+        },
+      ]}
     />
   )
 }

@@ -1,18 +1,19 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 
 import SEO from "../components/SEO"
-import { PageWrapper } from "./styles/PageStyles"
-import { Link } from "gatsby"
 
-const NotFoundPage = () => (
+import { PageWrapper } from "./styles/PageStyles"
+
+const Success = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="submission-page" />
     <PageWrapper>
       <section className="container">
-        <h1 className="title">NOT FOUND</h1>
-        <h3>uppps...! try it again</h3>
+        <h1 className="title">Thanks for Submitting</h1>
+        <h3>I will be in touch shortly</h3>
         <Link className="btn-link" to="/">
           <button className="cta-btn">Back to Homepage</button>
         </Link>
@@ -21,4 +22,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default Success
