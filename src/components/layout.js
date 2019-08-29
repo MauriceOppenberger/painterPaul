@@ -12,7 +12,7 @@ import styled from "styled-components"
 import Header from "./header/Header"
 import Footer from "./footer/Footer"
 import "./layout.css"
-import Hamburger from "./header/Navigation/Hamburger"
+import Hamburger from "./header/navigation/Hamburger"
 import NavigationModal from "./header/navigation/NavigationModal"
 
 const Primary = styled.main`
