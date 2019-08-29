@@ -11,7 +11,7 @@ import styled from "styled-components"
 
 import Header from "./header/Header"
 import Footer from "./footer/Footer"
-import "./Layout.css"
+import "./layout.css"
 import Hamburger from "./header/Navigation/Hamburger"
 import NavigationModal from "./header/navigation/NavigationModal"
 

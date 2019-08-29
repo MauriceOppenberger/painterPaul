@@ -1,8 +1,8 @@
 import React from "react"
 
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 import { PageWrapper } from "../templates/styles/Page"
 import { Link } from "gatsby"
 
