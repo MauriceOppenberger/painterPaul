@@ -138,8 +138,8 @@ module.exports = {
         perPage: 100,
         // Search and Replace Urls across WordPress content.
         searchAndReplaceContentUrls: {
-          sourceUrl: "https://source-url.com",
-          replacementUrl: "https://replacement-url.com",
+          sourceUrl: "",
+          replacementUrl: "",
         },
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 10,
