@@ -2,7 +2,9 @@ import styled from "styled-components"
 
 export const PageWrapper = styled.div`
 /* background: #fff; */
-
+.wp-content{
+z-index: 999;
+}
 h2{
   font-size: 2.25rem
 }
@@ -28,18 +30,43 @@ h2{
 
   section{
       padding: 4rem 0 1rem;
+      z-index: 999
   }
 
   #hero{
     
-      background: url("${props => props.landing}");
+      /* background: url("${props => props.landing}");
       background-position: top center;
       background-size: cover;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat; */
       margin-top: -100px;
+      z-index: 999;
+      max-height: 1200px
   }
+  .bg-image-landing{
+  position: absolute!important;
+
+    width: 100%;
+    height: 100%;
+    min-height: 35%;
+    height: 50vmax;
+    max-height: 1200px;
+    margin-top: -100px;
+    z-index: 0;
+
+}
+ .bg-image-contact{
+  position: absolute!important;
+
+    width: 100%;
+    height: 100%;
+    max-height: 1200px;
+    z-index: 0;
+
+}
   article{
       padding: 0 15px;
+       z-index: 999;
   }
   @media screen and (min-width: 992px){
 
@@ -60,7 +87,7 @@ h2{
 
     min-height: 35vw;
   
-    
+    z-index: 999;
    
   }
   .background-image{
@@ -177,12 +204,12 @@ background-repeat: no-repeat
     font-weight: 500;
 }
   #contact{
-    background: url("${props => props.contact}");
+    /* background: url("${props => props.contact}");
       background-position: left center;
       background-size: cover;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat; */
       padding-bottom: 4rem;
-
+z-index: 999;
   }
   .contact{
       text-align: center

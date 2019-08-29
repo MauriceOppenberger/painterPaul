@@ -22,6 +22,7 @@ const Primary = styled.main`
   height: 100%;
   position: relative;
   background: linear-gradient(to bottom, #e9e7e8, #e4e2e5);
+  /* z-index: -1; */
 
   @media screen and (max-width: 992px) {
     /* max-width: 95vw; */

@@ -5,7 +5,7 @@ export const HamburgerButton = styled.div`
   display: block;
   z-index: 1000;
   right: 30px;
-  top: 29px;
+  top: 2.5vmax;
 
   cursor: pointer;
   transition: all 0.2s ease;

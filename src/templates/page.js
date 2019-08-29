@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 import ContactForm from "../components/contact/ContactForm"
 import { PageWrapper } from "./styles/Page"
+import BackgroundImage from "gatsby-background-image"
 
 const page = ({ pageContext, data }) => {
   const homepage = data.wordpressPage
@@ -27,7 +28,18 @@ const page = ({ pageContext, data }) => {
         >
           <div className="center">
             <div className="content">
-              <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
+              <BackgroundImage
+                Tag={"landing"}
+                className="bg-image-landing"
+                fluid={
+                  homepage.acf.landingbackground.localFile.childImageSharp.fluid
+                }
+              ></BackgroundImage>
+              <div
+                className="wp-content"
+                dangerouslySetInnerHTML={{ __html: pageContext.content }}
+              />
+
               <div>
                 <section id="contact">
                   <article>
@@ -58,7 +70,8 @@ export const pageQuery = graphql`
           localFile {
             url
             childImageSharp {
-              fluid(quality: 100, maxWidth: 1800) {
+              fluid(quality: 100, maxWidth: 4000) {
+                ...GatsbyImageSharpFluid_withWebp
                 src
               }
             }
@@ -71,6 +84,7 @@ export const pageQuery = graphql`
             url
             childImageSharp {
               fluid(quality: 100, maxWidth: 1800) {
+                ...GatsbyImageSharpFluid_withWebp
                 src
               }
             }
