@@ -157,19 +157,19 @@ h2{
 }
 .services-items .interior .bg-image{
 background: url(${props => props.interior});
-background-size: 50%;
+background-size: 18vmin;
 background-position: center;
 background-repeat: no-repeat
 }
 .services-items .exterior .bg-image{
 background: url(${props => props.exterior});
-background-size: 60%;
+background-size: 18vmin;
 background-position: center;
 background-repeat: no-repeat
 }
 .services-items .more .bg-image{
 background: url(${props => props.additional});
-background-size: 110%;
+background-size: 42vmin;
 background-position: center;
 background-repeat: no-repeat
 }
@@ -201,8 +201,7 @@ max-width: 70vmin;
   .contact-container {
       text-align: left;
     margin: 40px auto;
-    width: 100%;
- 
+     width: 75%!important;
     max-width: 500px;
   }
 
@@ -219,7 +218,7 @@ max-width: 70vmin;
       display: flex;
     max-width: 70vw;
     margin: 4rem auto 0;
-    font-size: 5vw;
+    font-size: 5vmax;
 }
 
 .image-gallery {
@@ -239,8 +238,8 @@ display: flex;
   justify-content: center;
 
 }
-.image-gallery li figure img{
-  height: 30vw;
+.image-gallery li figure img, picture{
+  width: 30vw;
  
 }
 .container {
