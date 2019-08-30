@@ -198,8 +198,8 @@ h2{
 
   #services{
 
-        /* background: linear-gradient(to bottom, #fff , #fff, #e3e3e5); */
-       background: #fff
+      background: linear-gradient(to bottom, #fff, #fff, #fafafb);
+       /* background: #fff */
 
        /* before the update */
 
@@ -314,8 +314,9 @@ max-width: 70vmin;
 display: flex; 
 flex-wrap: wrap;
 padding: 3rem 5vw ;
-    margin: 3rem auto 0;
-        background: #fff;
+ margin: 3rem auto 0;
+ /* background: #fff; */
+     background: linear-gradient(to bottom, #fff,#fff, #fff, #F7F7F7);
 }
 .image-gallery li{
 flex: 1 1 25vw;
