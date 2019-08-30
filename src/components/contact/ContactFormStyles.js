@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
+  h3 span {
+    text-transform: capitalize;
+  }
   p {
     margin: 1.75rem 0;
     width: 100%;
@@ -20,7 +23,7 @@ export const ContactFormWrapper = styled.form`
     border: 1px solid #001c3f;
     border-radius: 5px;
     box-shadow: var(--lightShadow);
-    background: #f4f7f6;
+    background: #fff;
   }
   textarea {
     width: 100%;
@@ -29,6 +32,7 @@ export const ContactFormWrapper = styled.form`
     height: 15vmax;
     border-radius: 5px;
     box-shadow: var(--lightShadow);
+    background: #fff;
   }
   button {
     /* width: max-content;
@@ -42,7 +46,7 @@ export const ContactFormWrapper = styled.form`
     transition: var(--mainTransition); */
     line-height: 2;
     margin: 1rem auto;
-    background-color: #eee;
+    background-color: #fff;
 
     padding: 0.5rem 3rem;
     border-radius: 500px;

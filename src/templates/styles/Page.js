@@ -144,6 +144,7 @@ h2{
       font-weight: 800;
       max-width: 70vmax;
       line-height: 1.6;
+      margin: auto;
   
     /* margin: 0 auto 3rem; */
   
@@ -152,7 +153,7 @@ h2{
     flex: 1  1 100%;
     font-size: 2.5vmax;
     font-weight: 800;
-     
+     margin: auto;
         /* margin: 0 auto 3rem; */
   }
      .cta-btn {
@@ -184,7 +185,7 @@ h2{
   }
   .landing .info {
     flex: 1 1 100%;
-    margin: auto 0 0 0;
+    margin-top: auto;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: small;
@@ -197,7 +198,8 @@ h2{
 
   #services{
 
-       background: #f4f7f6
+        /* background: linear-gradient(to bottom, #fff , #fff, #e3e3e5); */
+       background: #fff
 
        /* before the update */
 
@@ -304,6 +306,8 @@ max-width: 70vmin;
     max-width: 70vw;
     margin: 4rem auto 0;
     font-size: 5vmax;
+    line-height: 1.6;
+    /* margin: auto; */
 }
 
 .image-gallery {
@@ -311,7 +315,7 @@ display: flex;
 flex-wrap: wrap;
 padding: 3rem 5vw ;
     margin: 3rem auto 0;
-    background: #fff
+        background: #fff;
 }
 .image-gallery li{
 flex: 1 1 25vw;
