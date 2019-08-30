@@ -276,13 +276,13 @@ z-index: 999;
       text-align: center
   }
   .contact .title{
-          max-width: 28vmax;
+          max-width: 20vmax;
       margin: auto;
       line-height: 1.5
   }
   @media screen and (max-width: 667px){
       .contact .title{
-max-width: 70vmin;
+max-width: 60vmin;
       }
       
   }

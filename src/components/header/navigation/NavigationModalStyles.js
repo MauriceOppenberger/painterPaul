@@ -34,7 +34,7 @@ export const Overlay = styled.div`
     .overlayMenu {
       text-align: center;
       list-style-type: none;
-      margin: 50% 0 0;
+      margin: 20vmax 0 0;
 
       li {
         margin: 0 0 50px 0;
@@ -52,9 +52,9 @@ export const Overlay = styled.div`
         text-transform: uppercase;
         font-family: Raleway;
 
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1.5;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
 
         :hover {
           color: #d22e26;

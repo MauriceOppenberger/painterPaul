@@ -19,6 +19,7 @@ const navigation = () => {
               object_slug
               object_id
               url
+              type
             }
           }
         }
@@ -33,7 +34,9 @@ const navigation = () => {
       <ul>
         {menu.items.map(item => (
           <li key={item.object_id}>
-            <Link to={item.object_slug}>{item.title}</Link>
+            <Link to={item.type !== "custom" ? item.object_slug : item.url}>
+              {item.title}
+            </Link>
           </li>
         ))}
       </ul>
