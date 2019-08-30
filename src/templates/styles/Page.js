@@ -32,7 +32,7 @@ h2{
 
     /* min-height: 41.5%; */
     /* height: 50vmax; */
-    height: 34%;
+    height: 30%;
     
     margin-top: -100px;
     z-index: 0;
@@ -75,6 +75,7 @@ h2{
       background-repeat: no-repeat; */
       /* margin-top: -100px; */
       /* z-index: 999; */
+
        max-height: 650px;
       height: 70vmax;
       min-height: 35vw;

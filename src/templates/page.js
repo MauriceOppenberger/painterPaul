@@ -10,8 +10,6 @@ import BackgroundImage from "gatsby-background-image"
 const page = ({ pageContext, data }) => {
   const homepage = data.wordpressPage
 
-  const landingBackground = homepage.acf.landingbackground.localFile.url
-  const contactBackground = homepage.acf.contactbackground.localFile.url
   const exteriorIcon = homepage.acf.exterioricon.localFile.url
   const interiorIcon = homepage.acf.interioricon.localFile.url
   const additionalIcon = homepage.acf.additionalicon.localFile.url
@@ -20,26 +18,23 @@ const page = ({ pageContext, data }) => {
       <SEO title={pageContext.title} />
       <Layout>
         <PageWrapper
-          landing={landingBackground}
-          contact={contactBackground}
           exterior={exteriorIcon}
           interior={interiorIcon}
           additional={additionalIcon}
         >
+          <BackgroundImage
+            Tag={"landing"}
+            className="bg-image-landing"
+            fluid={
+              homepage.acf.landingbackground.localFile.childImageSharp.fluid
+            }
+          />
           <div className="center">
             <div className="content">
-              <BackgroundImage
-                Tag={"landing"}
-                className="bg-image-landing"
-                fluid={
-                  homepage.acf.landingbackground.localFile.childImageSharp.fluid
-                }
-              ></BackgroundImage>
               <div
                 className="wp-content"
                 dangerouslySetInnerHTML={{ __html: pageContext.content }}
               />
-
               <div>
                 <section id="contact">
                   <article>
