@@ -7,12 +7,13 @@ module.exports = {
   siteMetadata: {
     title: `Painter Paul`,
     description: `Private Painting Contractor based in Guelph, Ontario`,
-    keywords: `indoor painting, outdoor painting, guelph, wellingtion county, southhampton, painter paul, contractor, fast, reliable, free quote`,
+    keywords: `indoor painting, outdoor painting, guelph, wellingtion county, southhampton, painter paul, paul benham, contractor, fast, reliable, free quote, quote`,
     author: `@mauriceoppenberger`,
     siteUrl: "https://painter-paul.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,8 +24,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://painterpaul.oppenberger.com",
-        sitemap: "https://painterpaul.oppenberger.com/sitemap.xml",
+        host: "https://painter-paul.com",
+        sitemap: "https://painter-paul.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
