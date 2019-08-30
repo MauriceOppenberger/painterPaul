@@ -23,7 +23,7 @@ export const ContactFormWrapper = styled.form`
     border: 1px solid #001c3f;
     border-radius: 5px;
     box-shadow: var(--lightShadow);
-    background: #fff;
+    background: #eee;
   }
   textarea {
     width: 100%;
@@ -32,7 +32,7 @@ export const ContactFormWrapper = styled.form`
     height: 15vmax;
     border-radius: 5px;
     box-shadow: var(--lightShadow);
-    background: #fff;
+    background: #eee;
   }
   button {
     /* width: max-content;
@@ -46,7 +46,7 @@ export const ContactFormWrapper = styled.form`
     transition: var(--mainTransition); */
     line-height: 2;
     margin: 1rem auto;
-    background-color: #fff;
+    background-color: #eee;
 
     padding: 0.5rem 3rem;
     border-radius: 500px;

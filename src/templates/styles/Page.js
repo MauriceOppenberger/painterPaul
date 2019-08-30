@@ -199,6 +199,7 @@ h2{
   #services{
 
       background: linear-gradient(to bottom, #fff, #fff, #fafafb);
+      padding-bottom: 2rem
        /* background: #fff */
 
        /* before the update */
@@ -275,7 +276,7 @@ z-index: 999;
       text-align: center
   }
   .contact .title{
-      max-width: 50vmax;
+          max-width: 28vmax;
       margin: auto;
       line-height: 1.5
   }
@@ -287,7 +288,7 @@ max-width: 70vmin;
   }
   .contact-container {
       text-align: left;
-    margin: 10% auto;
+    margin:  5% auto;
      width: 75%!important;
     max-width: 500px;
   }
