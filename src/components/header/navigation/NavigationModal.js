@@ -32,7 +32,7 @@ const NavigationModal = ({ menuOpen, callback }) => {
       <div className="inner">
         <ul className="overlayMenu">
           {menu.items.map((item, i) => (
-            <li key={i}>
+            <li key={item.object_id}>
               <Link to={`/${item.object_slug}`} activeClassName="overlayActive">
                 {item.title}
               </Link>

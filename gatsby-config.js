@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://painter-paul.com",
-        sitemap: "https://painter-paul.com/sitemap.xml",
+        host: "https://painterpaul.oppenberger.com",
+        sitemap: "https://painterpaul.oppenberger.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
