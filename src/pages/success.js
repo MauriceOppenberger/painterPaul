@@ -9,7 +9,7 @@ import { PageWrapper } from "../templates/styles/Page"
 
 const Success = () => (
   <Layout>
-    <SEO title="submission-page" />
+    <SEO title="Success" description="This is the submission page. You have successful submitted the contact form. " />
     <PageWrapper>
       <section className="container" style={{ background: "#fff" }}>
         <h1 className="title">Thanks for Submitting</h1>

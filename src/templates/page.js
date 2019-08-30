@@ -15,7 +15,8 @@ const page = ({ pageContext, data }) => {
   const additionalIcon = homepage.acf.additionalicon.localFile.url
   return (
     <>
-      <SEO title={pageContext.title} />
+      <SEO title={pageContext.title} 
+      description={pageContext.acf.description}/>
       <Layout>
         <PageWrapper
           exterior={exteriorIcon}

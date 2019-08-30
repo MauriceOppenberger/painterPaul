@@ -8,7 +8,10 @@ import { Link } from "gatsby"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO
+      title="404: Not found"
+      description="this is a 404 page. The site you are trying to visit does not exits or uses a different link"
+    />
     <PageWrapper>
       <section className="container" style={{ background: "#fff" }}>
         <h1 className="title">NOT FOUND</h1>

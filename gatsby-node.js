@@ -11,7 +11,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   const result = await graphql(`
-    {
+   {
       allWordpressPage {
         edges {
           node {
@@ -21,6 +21,9 @@ exports.createPages = async ({ graphql, actions }) => {
             content
             template
             status
+            acf {
+              description
+            }
             featured_media {
               localFile {
                 childImageSharp {
