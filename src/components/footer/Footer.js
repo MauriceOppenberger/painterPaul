@@ -6,7 +6,7 @@ const Footer = () => {
     <FooterWrapper>
       <div className="inner">
         <p>
-          copyright © {new Date().getFullYear()}, painer paul
+          copyright © {new Date().getFullYear()}, painter-paul.com
           {` `}
         </p>
         <p>

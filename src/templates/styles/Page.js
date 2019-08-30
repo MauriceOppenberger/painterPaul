@@ -110,7 +110,7 @@ h2{
     
     display: flex;
     flex-wrap: wrap;
-   width: 100%;
+    width: 100%;
     height: 100%;
     z-index: 999;
 
@@ -145,7 +145,7 @@ h2{
       font-weight: 800;
       max-width: 70vmax;
       line-height: 1.6;
-      margin: auto;
+      margin: auto 0;
   
     /* margin: 0 auto 3rem; */
   
