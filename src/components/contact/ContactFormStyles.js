@@ -58,7 +58,7 @@ export const ContactFormWrapper = styled.form`
     border: none;
   }
   button:hover {
-    background-color: #96c50b;
+    background-color: green;
     color: #fff;
     box-shadow: var(--darkShadow);
   }

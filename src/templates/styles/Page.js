@@ -161,7 +161,7 @@ h2{
     flex: 1  1 100%;
     line-height: 2;
     margin: 1rem 0;
-    background-color: #96c50b;
+    background-color: green;
     padding: 0.5rem 3rem;
     border-radius: 500px;
     color: var(--mainWhite);
@@ -350,7 +350,7 @@ display: flex;
   .cta-btn {
     line-height: 2;
     margin: 1rem 0;
-    background-color: #96c50b;
+    background-color: green;
     padding: 0.5rem 3rem;
     border-radius: 500px;
     color: var(--mainWhite);
