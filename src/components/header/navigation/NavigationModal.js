@@ -21,6 +21,7 @@ const NavigationModal = ({ menuOpen, callback }) => {
               object_slug
               object_id
               url
+              type
             }
           }
         }
