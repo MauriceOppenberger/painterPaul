@@ -2,11 +2,10 @@ import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
   p {
-    margin: 0.5rem 0;
+    margin: 1.75rem 0;
     width: 100%;
   }
   p:nth-last-child(1) {
-    margin: 0.5rem 0;
     width: 100%;
     display: flex;
   }
@@ -21,6 +20,7 @@ export const ContactFormWrapper = styled.form`
     border: 1px solid #001c3f;
     border-radius: 5px;
     box-shadow: var(--lightShadow);
+    background: #f4f7f6;
   }
   textarea {
     width: 100%;

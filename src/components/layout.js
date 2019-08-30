@@ -18,10 +18,10 @@ import NavigationModal from "./header/navigation/NavigationModal"
 const Primary = styled.main`
   margin: 0 auto;
   /* max-width: 70vw; */
-  padding-top: 100px;
+  padding: 100px 0px;
   height: 100%;
   position: relative;
-  background: linear-gradient(to bottom, #e9e7e8, #e4e2e5);
+  /* background: linear-gradient(to bottom, #e9e7e8, #e4e2e5); */
   /* z-index: -1; */
 
   @media screen and (max-width: 992px) {

@@ -25,32 +25,15 @@ h2{
   }
 
 
-
-  /* Home Page  */
-
-  section{
-      padding: 4rem 0 1rem;
-      z-index: 999
-  }
-
-  #hero{
-    
-      /* background: url("${props => props.landing}");
-      background-position: top center;
-      background-size: cover;
-      background-repeat: no-repeat; */
-      margin-top: -100px;
-      z-index: 999;
-      max-height: 1200px
-  }
-  .bg-image-landing{
+ .bg-image-landing{
   position: absolute!important;
 
     width: 100%;
-    height: 100%;
-    min-height: 35%;
-    height: 50vmax;
-    max-height: 1200px;
+
+    /* min-height: 41.5%; */
+    /* height: 50vmax; */
+    height: 34%;
+    
     margin-top: -100px;
     z-index: 0;
 
@@ -64,57 +47,116 @@ h2{
     z-index: 0;
 
 }
+
+
+  /* Home Page  */
+
+  section{
+      padding: 4rem 0 0rem;
+      z-index: 999
+  }
+  
+
+
+  /* homepage background images */
+
+
+ 
+
+
+/* Wordpress content classes */
+
+
+  #hero{
+    
+      /* background: url("${props => props.landing}");
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat; */
+      /* margin-top: -100px; */
+      /* z-index: 999; */
+       max-height: 650px;
+      height: 70vmax;
+      min-height: 35vw;
+  }
+@media screen and(max-width: 667px){
+  padding: 0px
+}
+
+
+
+
+
   article{
+      height: 100%;
       padding: 0 15px;
        z-index: 999;
+      
   }
-  @media screen and (min-width: 992px){
+
+ @media screen and (min-width: 992px){
 
     .content article{
         max-width: 70%;
         margin: auto;
-        padding: 0px 0;
+        /* padding: 0px 0; */
     }
   }
 
+
+
   .landing {
     
-    height: max-content;
-    max-width: 100%;
-    /*  */
-    
-    margin: 5rem 0 0;
-
-    min-height: 35vw;
-  
+    display: flex;
+    flex-wrap: wrap;
+   width: 100%;
+    height: 100%;
     z-index: 999;
+
+    /* before update */
+
+    /* height: max-content; */
+    /* margin: 5rem 0 0; */
+    /* min-height: 35vw; */
+  
+
    
   }
-  .background-image{
+
+
+  /* .background-image{
       height: 45vw;
       width: 100vw;
           position: absolute;
     right: 0px;
     top: 0px;
-    z-index: -1;    
+    z-index: -1;     */
       /* background: url("${props => props.src}") */
-  }.background-image .gatsby-image-wrapper{
+  /* }.background-image .gatsby-image-wrapper{
       width: inherit;
       height: inherit
-  }
+  } */
+
+
   .landing .title {
+    flex: 1  1 100%;
     font-size: 5vmax;
-    
-    margin: 0 auto 3rem;
-    font-weight: 800;
+      font-weight: 800;
+      max-width: 70vmax;
+      line-height: 1.6;
+  
+    /* margin: 0 auto 3rem; */
+  
   }
   .landing .sub-title {
+    flex: 1  1 100%;
     font-size: 2.5vmax;
-    
-    margin: 0 auto 3rem;
     font-weight: 800;
+     
+        /* margin: 0 auto 3rem; */
   }
      .cta-btn {
+    flex: 1  1 100%;
     line-height: 2;
     margin: 1rem 0;
     background-color: #96c50b;
@@ -132,27 +174,43 @@ h2{
     box-shadow: var(--darkShadow);
   }
      .btn-link {
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      flex: 1 1 100%;
+    margin: auto;
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 800;
+
+
   }
   .landing .info {
+    flex: 1 1 100%;
+    margin: auto 0 0 0;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: small;
-    margin-top: 10vw;
+    max-width: 80vw;
+
   }
 
+/* SERVICES SECTION */
+
+
   #services{
+
+       background: #f4f7f6
+
+       /* before the update */
+
       /* background: linear-gradient(to bottom, #e3e1e4,#fff,#fff,#fff,#fff,#fff, #e3e1e4) */
       /* background: #fff */
        /* background: linear-gradient(to bottom, #f4f7f6,#fff,#f4f7f6) */
-       background: #f4f7f6
+    
 
       
   }
 
   .services{
+ 
       text-align: center;
       /* margin: 5rem 0 7rem; */
       /* padding: 4rem */
@@ -167,9 +225,9 @@ h2{
   }
   .services-items div{
      
-     flex: 1 1 30%;
+     flex: 1 1 250px;
      padding: 15px;
-     margin: 0.1rem;
+     margin: 0.5rem;
       /* width: 300px; */
       height: max-content;
       /* background-color: #eee */
@@ -208,14 +266,14 @@ background-repeat: no-repeat
       background-position: left center;
       background-size: cover;
       background-repeat: no-repeat; */
-      padding-bottom: 4rem;
+      /* padding-bottom: 4rem; */
 z-index: 999;
   }
   .contact{
       text-align: center
   }
   .contact .title{
-      max-width: 50vmin;
+      max-width: 50vmax;
       margin: auto;
       line-height: 1.5
   }
@@ -227,7 +285,7 @@ max-width: 70vmin;
   }
   .contact-container {
       text-align: left;
-    margin: 40px auto;
+    margin: 10% auto;
      width: 75%!important;
     max-width: 500px;
   }
