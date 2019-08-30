@@ -24,7 +24,7 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://painter-paul.com",
-        sitemap: "https://painterpaul.oppenberger.com/sitemap.xml",
+        sitemap: "https://painter-paul.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
