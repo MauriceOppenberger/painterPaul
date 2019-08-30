@@ -277,7 +277,7 @@ z-index: 999;
       text-align: center
   }
   .contact .title{
-          max-width: 20vmax;
+              max-width: 60vmin;
       margin: auto;
       line-height: 1.5
   }
