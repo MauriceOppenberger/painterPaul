@@ -2,16 +2,18 @@ import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
   padding: 1.45rem 0;
-  max-height: 100px;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  height: 100px;
+  display: flex;
+  /* position: absolute; */
+  /* bottom: 0;
+  left: 0; */
   width: 100%;
 
   .inner {
     display: flex;
-    max-width: 70vmax;
+    /* max-width: 70vmax; */
+    max-width: 70vw;
+    width: 100%;
 
     margin: auto;
     justify-content: space-between;
@@ -22,7 +24,7 @@ export const FooterWrapper = styled.footer`
   .inner p {
     margin: 0;
     font-size: smaller;
-    flex: 1 1 300px;
+    flex: 1 1 250px;
   }
   .inner p:nth-child(2) {
     text-align: right;

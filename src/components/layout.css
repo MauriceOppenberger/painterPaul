@@ -15,13 +15,22 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: linear-gradient(to bottom, #e4e4e4, #e1dfe2); */
+  height: 100%;
 }
+div#___gatsby{
+  height: 100%
+}
+div#gatsby-focus-wrapper{
+  height:100%
+}
+
 article,
 aside,
 details,

@@ -3,13 +3,14 @@ import styled from "styled-components"
 export const PageWrapper = styled.div`
 /* background: #fff; */
 .wp-content{
+height: 100%
 z-index: 999;
 }
 h2{
   font-size: 2.25rem
 }
   .center {
-    /* margin: 40px auto; */
+    height: 100%
     max-width: 100%;
     justify-content: space-between;
     display: flex;
@@ -30,29 +31,23 @@ h2{
 
     width: 100%;
 
-    /* min-height: 41.5%; */
-    /* height: 50vmax; */
-    height: 30%;
     
     margin-top: -100px;
-    z-index: 0;
+  
+
+        max-height: 750px;
+    height: 83vmax;
+    min-height: 35vw;
+      z-index: -1;
 
 }
- .bg-image-contact{
-  position: absolute!important;
 
-    width: 100%;
-    height: 100%;
-    max-height: 1200px;
-    z-index: 0;
-
-}
 
 
   /* Home Page  */
 
   section{
-      padding: 4rem 0 0rem;
+      margin-bottom: 4rem;
       z-index: 999
   }
   
@@ -69,12 +64,6 @@ h2{
 
   #hero{
     
-      /* background: url("${props => props.landing}");
-      background-position: top center;
-      background-size: cover;
-      background-repeat: no-repeat; */
-      /* margin-top: -100px; */
-      /* z-index: 999; */
 
        max-height: 650px;
       height: 70vmax;
@@ -100,7 +89,7 @@ h2{
     .content article{
         max-width: 70%;
         margin: auto;
-        /* padding: 0px 0; */
+
     }
   }
 
@@ -114,29 +103,14 @@ h2{
     height: 100%;
     z-index: 999;
 
-    /* before update */
 
-    /* height: max-content; */
-    /* margin: 5rem 0 0; */
-    /* min-height: 35vw; */
   
 
    
   }
 
 
-  /* .background-image{
-      height: 45vw;
-      width: 100vw;
-          position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: -1;     */
-      /* background: url("${props => props.src}") */
-  /* }.background-image .gatsby-image-wrapper{
-      width: inherit;
-      height: inherit
-  } */
+
 
 
   .landing .title {
@@ -154,7 +128,8 @@ h2{
     flex: 1  1 100%;
     font-size: 2.5vmax;
     font-weight: 800;
-     margin: auto;
+    margin-bottom: auto;
+     /* margin: auto; */
         /* margin: 0 auto 3rem; */
   }
      .cta-btn {
@@ -177,7 +152,7 @@ h2{
   }
      .btn-link {
       flex: 1 1 100%;
-    margin: auto;
+    /* margin: auto; */
         font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 800;
@@ -266,32 +241,37 @@ background-repeat: no-repeat
     font-weight: 500;
 }
   #contact{
-    /* background: url("${props => props.contact}");
-      background-position: left center;
-      background-size: cover;
-      background-repeat: no-repeat; */
-      /* padding-bottom: 4rem; */
+
+          background: #fff;
 z-index: 999;
   }
   .contact{
-      text-align: center
+      /* text-align: center */
+          margin: 2rem 0;
   }
   .contact .title{
-              max-width: 60vmin;
-      margin: auto;
-      line-height: 1.5
+              /* max-width: 60vmin;
+      margin: auto; */
+      width: 75%;
+      font-weight: 800;
+      line-height: 1.5;
+
+          max-width: 85vmin;
+    font-size: 5vmax;
+        margin: 0 auto;
   }
-  @media screen and (max-width: 667px){
+  /* @media screen and (max-width: 667px){
       .contact .title{
 max-width: 60vmin;
-      }
+      } */
       
   }
   .contact-container {
       text-align: left;
-    margin:  5% auto;
+    margin:  3rem auto 0;
      width: 75%!important;
-    max-width: 500px;
+    max-width: 85vmin;
+
   }
 
      @media screen and (max-width: 992px) {
