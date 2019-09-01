@@ -40,7 +40,7 @@ const page = ({ pageContext, data }) => {
                 <section id="contact">
                   <article>
                     <div class="contact">
-                      <h2 class="title">Write Paul. <br/> Get a Free Quote.</h2>
+                      <h2 class="title-contact">Write Paul. <br/> Get a Free Quote.</h2>
                       <div className="contact-container">
                         <ContactForm />
                       </div>

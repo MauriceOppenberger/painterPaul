@@ -113,7 +113,7 @@ h2{
 
 
 
-  .landing .title {
+  .landing .title-landing {
     flex: 1  1 100%;
     font-size: 5vmax;
       font-weight: 800;
@@ -196,12 +196,23 @@ h2{
       
 
   }
+  .services .title-services{
+    font-size: 3.5vmax
+  }
 
   .services-items{
       display: flex;
       flex-wrap: wrap;
       margin: 40px auto;
   }
+  @media screen and (max-width: 997px){
+    .services-items{
+        max-width: 600px;
+    margin: 4rem auto;
+    }
+
+  }
+
   .services-items div{
      
      flex: 1 1 250px;
@@ -213,27 +224,28 @@ h2{
   }
 .services-items .bg-image{
     width: auto;
-        height: 20vw;
+        height: 15vmin;
     max-height: 250px;
     background: red;
     display: flex;
+    margin-bottom: 1rem
 
 }
 .services-items .interior .bg-image{
 background: url(${props => props.interior});
-background-size: 18vmin;
+background-size: contain;
 background-position: center;
 background-repeat: no-repeat
 }
 .services-items .exterior .bg-image{
 background: url(${props => props.exterior});
-background-size: 18vmin;
+background-size: contain;
 background-position: center;
 background-repeat: no-repeat
 }
 .services-items .more .bg-image{
 background: url(${props => props.additional});
-background-size: 42vmin;
+background-size: contain;
 background-position: center;
 background-repeat: no-repeat
 }
@@ -244,33 +256,29 @@ background-repeat: no-repeat
 
           background: #fff;
 z-index: 999;
+margin-bottom: 0
   }
   .contact{
       /* text-align: center */
-          margin: 2rem 0;
+          max-width: 600px;
+          margin: 2rem auto;
   }
-  .contact .title{
-              /* max-width: 60vmin;
-      margin: auto; */
-      width: 75%;
-      font-weight: 800;
-      line-height: 1.5;
-
-          max-width: 85vmin;
-    font-size: 5vmax;
+  .contact .title-contact{
+    display: block;
+  
+      font-size: 3.5vmax;
         margin: 0 auto;
+}
+  
   }
-  /* @media screen and (max-width: 667px){
-      .contact .title{
-max-width: 60vmin;
-      } */
+
       
   }
   .contact-container {
       text-align: left;
-    margin:  3rem auto 0;
-     width: 75%!important;
-    max-width: 85vmin;
+    margin:  4rem auto 0;
+
+    max-width: 600px
 
   }
 
@@ -282,7 +290,7 @@ max-width: 60vmin;
 
 
   /* Gallery Page  */
-.gallery-title{
+.title{
  
       display: flex;
     max-width: 70vw;
