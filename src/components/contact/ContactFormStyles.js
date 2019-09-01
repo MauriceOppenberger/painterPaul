@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
+    max-width: 80vmin;
+    margin: auto;
+
 h5{
   text-align: center;
 }
@@ -42,7 +45,7 @@ h5{
     line-height: 2;
     margin: 1rem auto;
     background-color: green;
-      max-width: 22vmax;
+      max-width: 20vmax;
 
     padding: 0.5rem 3rem;
     border-radius: 500px;
