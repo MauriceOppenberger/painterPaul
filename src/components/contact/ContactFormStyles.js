@@ -1,7 +1,10 @@
 import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
-  h3 span {
+h5{
+  text-align: center;
+}
+  h5 span {
     text-transform: capitalize;
   }
   p {
@@ -35,22 +38,15 @@ export const ContactFormWrapper = styled.form`
     background-color: #eeeeee55;
   }
   button {
-    /* width: max-content;
-    padding: 8px 25px;
-    display: flex;
-    margin: 1.45rem 0 0 auto;
-    background-color: transparent;
-    border: 1px solid #001c3f;
-    border-radius: 5px;
-    box-shadow: var(--lightShadow);
-    transition: var(--mainTransition); */
+
     line-height: 2;
     margin: 1rem auto;
     background-color: green;
+      max-width: 22vmax;
 
     padding: 0.5rem 3rem;
     border-radius: 500px;
-    /* color: var(--mainWhite); */
+    color: var(--mainWhite);
     box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
     font-weight: 600;
