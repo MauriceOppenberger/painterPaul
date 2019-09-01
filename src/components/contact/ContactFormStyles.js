@@ -46,7 +46,7 @@ export const ContactFormWrapper = styled.form`
     transition: var(--mainTransition); */
     line-height: 2;
     margin: 1rem auto;
-    background-color: #eeeeee55;
+    background-color: green;
 
     padding: 0.5rem 3rem;
     border-radius: 500px;
@@ -59,7 +59,7 @@ export const ContactFormWrapper = styled.form`
   }
   button:hover {
     background-color: green;
-    color: #fff;
+ 
     box-shadow: var(--darkShadow);
   }
   .hidden {

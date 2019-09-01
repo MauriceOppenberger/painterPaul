@@ -14,7 +14,7 @@ const NotFoundPage = () => (
     />
     <PageWrapper>
       <section className="container" style={{ background: "#fff" }}>
-        <h1 className="title">NOT FOUND</h1>
+        <h1 className="title-nf">NOT FOUND</h1>
         <h3>uppps...! try it again</h3>
         <Link className="btn-link" to="/">
           <button className="cta-btn">Back to Homepage</button>

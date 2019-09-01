@@ -260,12 +260,12 @@ margin-bottom: 0
   }
   .contact{
       /* text-align: center */
-          max-width: 600px;
+          max-width: 100%;
           margin: 2rem auto;
   }
   .contact .title-contact{
     display: block;
-  
+  text-align: center;
       font-size: 3.5vmax;
         margin: 0 auto;
 }
@@ -277,8 +277,8 @@ margin-bottom: 0
   .contact-container {
       text-align: left;
     margin:  4rem auto 0;
-
-    max-width: 600px
+    padding: 0 5%;
+    max-width: 100%
 
   }
 
@@ -356,4 +356,11 @@ display: flex;
     font-weight: 800;
   }
 
+.title-success .title-nf{
+  display: block;
+     max-width: 70vw;
+    margin: 4rem auto 0;
+    font-size: 5vmax;
+    line-height: 1.6;
+}
 `
