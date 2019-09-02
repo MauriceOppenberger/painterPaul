@@ -45,7 +45,7 @@ h5{
     line-height: 2;
     margin: 1rem auto;
     background-color: green;
-      max-width: 20vmax;
+
 
     padding: 0.5rem 3rem;
     border-radius: 500px;
@@ -53,7 +53,7 @@ h5{
     box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
     font-weight: 600;
-    width: 70%;
+    width: 60%;
     border: none;
   }
   button:hover {

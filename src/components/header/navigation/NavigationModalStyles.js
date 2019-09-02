@@ -11,8 +11,8 @@ export const Overlay = styled.div`
   /* background: #fff; */
   left: 0px;
   top: 0px;
-  padding: 20px;
-  transition: all 0.3s ease;
+  padding: 0px;
+  transition: all 0.4s ease;
 
   .inner {
     display: flex;
@@ -21,7 +21,7 @@ export const Overlay = styled.div`
     /* justify-content: center; */
     background: rgba(0, 0, 0, 0.9);
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     color: #fff;
     padding: 40px;
 
@@ -34,7 +34,7 @@ export const Overlay = styled.div`
     .overlayMenu {
       text-align: center;
       list-style-type: none;
-      margin: 20vmax 0 0;
+      margin: 0;
 
       li {
         margin: 0 0 50px 0;
@@ -64,16 +64,25 @@ export const Overlay = styled.div`
   }
 
   .closeButton {
-    position: absolute;
-    top: 50px;
-    right: 50px;
+    /* position: absolute; */
+    /* top: 50px;
+    right: 50px; */
     color: #fff;
     width: max-content;
-    height: 32px;
+    height: max-content;
     cursor: pointer;
-    transition: all 1s ease;
+    /* transition: all 1s ease; */
 
-    :hover {
+    /* :hover {
+      transform: rotate(180deg);
+    } */
+  }
+  .closeButton svg{
+    margin: 10vmax 0 5vmax;
+transition: all .8s ease;
+
+     :hover {
+      color: #d22e26;
       transform: rotate(180deg);
     }
   }

@@ -31,6 +31,15 @@ const NavigationModal = ({ menuOpen, callback }) => {
   return (
     <Overlay menuOpen={menuOpen}>
       <div className="inner">
+        <div
+          className="closeButton"
+          onClick={callback}
+          role="button"
+          tabIndex="0"
+          onKeyDown={callback}
+        >
+          <MdClose size={60} alt="close_button" />
+        </div>
         <ul className="overlayMenu">
           {menu.items.map((item, i) => (
             <li key={item.object_id}>
@@ -42,15 +51,7 @@ const NavigationModal = ({ menuOpen, callback }) => {
             </li>
           ))}
         </ul>
-        <div
-          className="closeButton"
-          onClick={callback}
-          role="button"
-          tabIndex="0"
-          onKeyDown={callback}
-        >
-          <MdClose size={32} alt="close_button" />
-        </div>
+        
       </div>
     </Overlay>
   )

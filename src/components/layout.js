@@ -21,7 +21,7 @@ const Primary = styled.main`
   margin-top: 100px;
 
   .site-main{
-    min-height: calc(100% - 200px);
+    min-height: calc(100% - 150px);
   }
 
   /* z-index: -1; */

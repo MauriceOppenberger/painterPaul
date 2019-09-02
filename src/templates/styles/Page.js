@@ -197,7 +197,7 @@ h2{
 
   }
   .services .title-services{
-    font-size: 3.5vmax
+    font-size: 4vmax
   }
 
   .services-items{
@@ -259,14 +259,14 @@ z-index: 999;
 margin-bottom: 0
   }
   .contact{
-      /* text-align: center */
+      text-align: center;
           max-width: 100%;
-          margin: 2rem auto;
+          margin: 4rem auto 0;
   }
   .contact .title-contact{
     display: block;
-  text-align: center;
-      font-size: 3.5vmax;
+  
+      font-size: 5vmax;
         margin: 0 auto;
 }
   
@@ -276,7 +276,7 @@ margin-bottom: 0
   }
   .contact-container {
       text-align: left;
-    margin:  4rem auto 0;
+    margin:  3rem auto 0;
     padding: 0 5%;
     max-width: 100%
 
@@ -294,7 +294,7 @@ margin-bottom: 0
  
       display: flex;
     max-width: 70vw;
-    margin: 4rem auto 0;
+    margin: 2rem auto 0;
     font-size: 5vmax;
     line-height: 1.6;
     /* margin: auto; */
@@ -356,10 +356,11 @@ display: flex;
     font-weight: 800;
   }
 
-.title-success .title-nf{
+.title-success, .title-nf{
+  
   display: block;
      max-width: 70vw;
-    margin: 4rem auto 0;
+    margin: 4rem auto 1rem;
     font-size: 5vmax;
     line-height: 1.6;
 }
