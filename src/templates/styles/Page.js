@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const PageWrapper = styled.div`
   /* background: #fff; */
   .wp-content {
-    height: 100%;
+    height: auto;
     z-index: 999;
   }
   h2 {
@@ -209,7 +209,7 @@ export const PageWrapper = styled.div`
   .contact {
     text-align: center;
     max-width: 100%;
-    margin: 4rem auto 0;
+    margin: 0 auto 0;
   }
   .contact .title-contact {
     display: block;
