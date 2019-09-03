@@ -13,6 +13,8 @@ const page = ({ pageContext, data }) => {
   const exteriorIcon = homepage.acf.exterioricon.localFile.url
   const interiorIcon = homepage.acf.interioricon.localFile.url
   const additionalIcon = homepage.acf.additionalicon.localFile.url
+
+  console.log(pageContext.status)
   return (
     <>
       <SEO title={pageContext.title} 

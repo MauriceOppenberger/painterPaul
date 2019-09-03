@@ -5,8 +5,8 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Painter Paul`,
-    description: `Private Painting Contractor based in Guelph, Ontario`,
+    title: `Painter Paul - Guelph`,
+    description: `Trusted Painting Contractor based in Guelph, Ontario - Email: pbenham@roger.com - painter-paul.com - Painter`,
     keywords: `indoor painting, outdoor painting, guelph, wellingtion county, southhampton, painter paul, paul benham, contractor, fast, reliable, free quote, quote`,
     author: `@mauriceoppenberger`,
     siteUrl: "https://painter-paul.com",
@@ -153,6 +153,7 @@ module.exports = {
         // ` will either include or exclude routes ending in `comments` and
         // all routes that begin with `yoast` from fetch.
         // Whitelisted routes using glob patterns
+
         includedRoutes: [
           "**/categories",
           "**/posts",
