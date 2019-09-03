@@ -143,7 +143,8 @@ h2{
     font-weight: 600;
        box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
-    border: none;   
+    border: none;  
+    
   }
    .cta-btn:hover {
 
@@ -152,7 +153,7 @@ h2{
   }
      .btn-link {
       flex: 1 1 100%;
-    /* margin: auto; */
+    margin: auto;
         font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 800;
@@ -336,6 +337,7 @@ display: flex;
   }
 
   .cta-btn {
+    
     line-height: 2;
     margin: 1rem 0;
     background-color: green;
