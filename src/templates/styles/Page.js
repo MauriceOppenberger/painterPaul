@@ -204,7 +204,7 @@ export const PageWrapper = styled.div`
   #contact {
     background: #fff;
     z-index: 999;
-    margin-bottom: 0;
+    margin: 2rem 0 0 0;
   }
   .contact {
     text-align: center;
