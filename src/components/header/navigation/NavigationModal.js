@@ -43,15 +43,15 @@ const NavigationModal = ({ menuOpen, callback }) => {
         <ul className="overlayMenu">
           {menu.items.map((item, i) => (
             <li key={item.object_id}>
-              <Link to={item.type !== "custom" ? `/${item.object_slug}`:item.url} activeClassName="overlayActive">
+              <Link
+                to={item.type !== "custom" ? item.object_slug : item.url}
+                activeClassName="overlayActive"
+              >
                 {item.title}
               </Link>
-
-            
             </li>
           ))}
         </ul>
-        
       </div>
     </Overlay>
   )
