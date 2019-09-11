@@ -10,6 +10,7 @@ module.exports = {
     keywords: `indoor painting, outdoor painting, painter paul guelph, wellingtion county, southhampton, painter paul, paul benham, , guelph painting, contractor, fast, reliable, free quote`,
     author: `@mauriceoppenberger`,
     siteUrl: "https://painter-paul.com",
+    image: "/icon.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
