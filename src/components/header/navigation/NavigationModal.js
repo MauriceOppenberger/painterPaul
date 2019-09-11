@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import { Overlay } from "./NavigationModalStyles"
 import { MdClose } from "react-icons/md"
 
+import {FaFacebook} from "react-icons/fa"
+
 const NavigationModal = ({ menuOpen, callback }) => {
   const {
     menu: {
@@ -43,12 +45,12 @@ const NavigationModal = ({ menuOpen, callback }) => {
         <ul className="overlayMenu">
           {menu.items.map((item, i) => (
             <li key={item.object_id}>
-              <Link
-                to={item.type !== "custom" ? item.object_slug : item.url}
-                activeClassName="overlayActive"
-              >
-                {item.title}
-              </Link>
+                {item.title === "Facebook" ? <a href={item.url} target='_blank' rel="noopener noreferrer"><FaFacebook size={32} color='white'/></a> : 
+            <Link to={item.type !== "custom" ? item.object_slug : item.url}
+            activeClassName="overlayActive">
+             { item.title}
+            </Link>
+          }
             </li>
           ))}
         </ul>

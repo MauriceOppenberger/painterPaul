@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { MenuWrapper } from "./NavigationStyles"
+import { FaFacebook } from "react-icons/fa"
 
 const navigation = () => {
   const {
@@ -34,9 +35,11 @@ const navigation = () => {
       <ul>
         {menu.items.map(item => (
           <li key={item.object_id}>
+            {item.title === "Facebook" ? <a href={item.url} target='_blank' rel="noopener noreferrer"><FaFacebook size={24}/></a> : 
             <Link to={item.type !== "custom" ? item.object_slug : item.url}>
-              {item.title}
+             { item.title}
             </Link>
+          }
           </li>
         ))}
       </ul>
