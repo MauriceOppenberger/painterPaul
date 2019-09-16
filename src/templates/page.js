@@ -17,8 +17,10 @@ const page = ({ pageContext, data }) => {
   console.log(pageContext.status)
   return (
     <>
-      <SEO title={pageContext.title} 
-      description={pageContext.acf.description}/>
+      <SEO
+        title={pageContext.title}
+        description={pageContext.acf.description}
+      />
       <Layout>
         <PageWrapper
           exterior={exteriorIcon}
@@ -42,9 +44,9 @@ const page = ({ pageContext, data }) => {
                 <section id="contact">
                   <article>
                     <div class="contact">
-                      <h2 class="title-contact">Write Paul.</h2> 
-                      <br/>
-                      <h3> or call to start the discuss details</h3>
+                      <h2 class="title-contact">Write Paul.</h2>
+                      <br />
+                      <h3> or call to discuss your project</h3>
                       <div className="contact-container">
                         <ContactForm />
                       </div>
