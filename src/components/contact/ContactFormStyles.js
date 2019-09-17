@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
-    max-width: 80vmin;
-    margin: auto;
+  max-width: 550px;
+  margin: auto;
 
-h5{
-  text-align: center;
-}
+  h5 {
+    text-align: center;
+  }
   h5 span {
     text-transform: capitalize;
   }
@@ -41,11 +41,9 @@ h5{
     background-color: #eeeeee55;
   }
   button {
-
     line-height: 2;
     margin: 1rem auto;
     background-color: green;
-
 
     padding: 0.5rem 3rem;
     border-radius: 500px;
@@ -58,7 +56,7 @@ h5{
   }
   button:hover {
     background-color: green;
- 
+
     box-shadow: var(--darkShadow);
   }
   .hidden {

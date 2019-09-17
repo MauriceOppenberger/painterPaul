@@ -44,9 +44,9 @@ const page = ({ pageContext, data }) => {
                 <section id="contact">
                   <article>
                     <div class="contact">
-                      <h2 class="title-contact">Write Paul.</h2>
+                      <h2 class="title-contact">Contact Paul</h2>
                       <br />
-                      <h3> or call to discuss your project</h3>
+                      <h3> to get free qoute on your project</h3>
                       <div className="contact-container">
                         <ContactForm />
                       </div>
