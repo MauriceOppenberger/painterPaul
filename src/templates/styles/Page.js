@@ -33,7 +33,8 @@ export const PageWrapper = styled.div`
     margin-top: -100px;
 
     max-height: 750px;
-    height: 83vmax;
+    /* height: 83vmax; */
+    height: 700px;
     min-height: 35vw;
     z-index: -1;
   }
@@ -51,7 +52,8 @@ export const PageWrapper = styled.div`
 
   #hero {
     max-height: 650px;
-    height: 70vmax;
+    /* height: 70vmax; */
+    height: 600px;
     min-height: 35vw;
   }
   @media screen and(max-width: 667px) {
