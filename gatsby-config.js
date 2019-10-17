@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `Painter Paul - Guelph`,
     description: `Trusted Painting Contractor based in Guelph, Ontario - Email: pbenham@roger.com - painter-paul.com - Painter`,
-    keywords: `indoor painting, outdoor painting, painter paul guelph, wellingtion county, southhampton, painter paul, paul benham, , guelph painting, contractor, fast, reliable, free quote`,
+    keywords: `indoor painting in Guelph, house painting in guelph, southhampton painting business, painter paul, paul benham, , local painting business in guelph, reliable painting contractor in guelph, fast and reliable painter in guelph, free painting quote`,
     author: `@mauriceoppenberger`,
     siteUrl: `https://www.painter-paul.com`,
     image: `/icon.png`,
