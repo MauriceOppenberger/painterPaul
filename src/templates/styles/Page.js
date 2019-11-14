@@ -193,13 +193,13 @@ export const PageWrapper = styled.div`
       margin: 4rem auto;
     }
     .service-blurb {
-      max-width: 70vw;
+      max-width: 100%;
     }
     .blurb {
-      max-width: 50vw;
+      max-width: 100%;
     }
     .title {
-      margin: 2rem auto 0;
+      margin: 0;
     }
   }
 
@@ -208,7 +208,7 @@ export const PageWrapper = styled.div`
     display: flex;
     width: 70vw;
     padding: 0 15px;
-    margin: 0;
+    margin: 2rem auto 0;
     font-size: 5vmax;
     line-height: 1.6;
   }
@@ -241,7 +241,6 @@ export const PageWrapper = styled.div`
   }
   .container .title {
     font-size: 5vmax;
-
     margin: 0 auto 3rem;
     font-weight: 800;
   }
@@ -276,13 +275,13 @@ export const PageWrapper = styled.div`
     line-height: 1.6;
   }
   .service-blurb {
-    max-width: 100%;
+    max-width: 70vw;
     padding: 0 15px;
     margin: auto;
   }
   .blurb {
     line-height: 1.5;
-    max-width: 100%;
+    max-width: 50vw;
     word-spacing: 3px;
     margin: 30px 0;
     font-size: 1rem;
