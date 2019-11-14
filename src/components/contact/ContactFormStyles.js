@@ -6,6 +6,7 @@ export const ContactFormWrapper = styled.form`
 
   h5 {
     text-align: center;
+    font-size: 1rem;
   }
   h5 span {
     text-transform: capitalize;
@@ -14,7 +15,7 @@ export const ContactFormWrapper = styled.form`
     margin: 1.75rem 0;
     width: 100%;
   }
-  p:nth-last-child(1) {
+  p:nth-last-child(2) {
     width: 100%;
     display: flex;
   }
@@ -62,9 +63,4 @@ export const ContactFormWrapper = styled.form`
   .hidden {
     display: none;
   }
-  /* @media screen and (min-width: 992px) {
-    p:nth-child(n + 3):nth-child(-n + 4) {
-      width: 80%;
-    }
-  } */
 `

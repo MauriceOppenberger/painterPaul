@@ -77,15 +77,16 @@ export default function ContactForm() {
             <textarea name="message" onChange={handleChange}></textarea>
           </label>
         </p>
-        <h5>
-          {" "}
-          Thanks for reaching out, <span>{name}</span>
-        </h5>
+
         <p>
           <button name="button" type="submit">
             Send
           </button>
         </p>
+        <h5>
+          {" "}
+          Looking forward working with you, <span>{name}</span>
+        </h5>
       </ContactFormWrapper>
     </>
   )

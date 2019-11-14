@@ -21,6 +21,13 @@ const navigation = () => {
               object_id
               url
               type
+              wordpress_children {
+                title
+                object_slug
+                object_id
+                url
+                type
+              }
             }
           }
         }
@@ -35,11 +42,31 @@ const navigation = () => {
       <ul>
         {menu.items.map(item => (
           <li key={item.object_id}>
-            {item.title === "Facebook" ? <a href={item.url} target='_blank' rel="noopener noreferrer"><FaFacebook size={24}/></a> : 
-            <Link to={item.type !== "custom" ? item.object_slug : item.url}>
-             { item.title}
-            </Link>
-          }
+            {item.title === "Facebook" ? (
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                <FaFacebook size={24} />
+              </a>
+            ) : (
+              <Link to={item.type !== "custom" ? item.object_slug : item.url}>
+                {item.title}
+              </Link>
+            )}
+            <ul className="dropdown-content">
+              {item.wordpress_children &&
+                item.wordpress_children.map(subitem => (
+                  <li key={subitem.object_id}>
+                    <Link
+                      to={
+                        subitem.type !== "custom"
+                          ? subitem.object_slug
+                          : subitem.url
+                      }
+                    >
+                      {subitem.title}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
           </li>
         ))}
       </ul>

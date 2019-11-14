@@ -11,9 +11,9 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   z-index: 1000;
   @media screen and (min-width: 992px) {
-    .inner {
+    /* .inner {
       max-width: 70vw;
-    }
+    } */
   }
   .inner {
     display: flex;

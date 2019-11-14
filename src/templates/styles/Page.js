@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const PageWrapper = styled.div`
-  /* background: #fff; */
   .wp-content {
     height: auto;
     z-index: 999;
@@ -33,7 +32,7 @@ export const PageWrapper = styled.div`
     margin-top: -100px;
 
     max-height: 750px;
-    /* height: 83vmax; */
+
     height: 700px;
     min-height: 35vw;
     z-index: -1;
@@ -42,17 +41,12 @@ export const PageWrapper = styled.div`
   /* Home Page  */
 
   section {
-    margin-bottom: 4rem;
     z-index: 999;
   }
 
-  /* homepage background images */
-
-  /* Wordpress content classes */
-
   #hero {
     max-height: 650px;
-    /* height: 70vmax; */
+
     height: 600px;
     min-height: 35vw;
   }
@@ -124,11 +118,12 @@ export const PageWrapper = styled.div`
   }
   .landing .info {
     flex: 1 1 100%;
-    margin-top: auto;
+
     font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: small;
     max-width: 80vw;
+    height: max-content;
   }
 
   /* SERVICES SECTION */
@@ -136,19 +131,11 @@ export const PageWrapper = styled.div`
   #services {
     background: linear-gradient(to bottom, #fff, #fff, #fafafb);
     padding-bottom: 2rem;
-    /* background: #fff */
-
-    /* before the update */
-
-    /* background: linear-gradient(to bottom, #e3e1e4,#fff,#fff,#fff,#fff,#fff, #e3e1e4) */
-    /* background: #fff */
-    /* background: linear-gradient(to bottom, #f4f7f6,#fff,#f4f7f6) */
+    margin-top: 3rem;
   }
 
   .services {
     text-align: center;
-    /* margin: 5rem 0 7rem; */
-    /* padding: 4rem */
   }
   .services .title-services {
     font-size: 4vmax;
@@ -159,20 +146,13 @@ export const PageWrapper = styled.div`
     flex-wrap: wrap;
     margin: 40px auto;
   }
-  @media screen and (max-width: 997px) {
-    .services-items {
-      max-width: 600px;
-      margin: 4rem auto;
-    }
-  }
 
   .services-items div {
     flex: 1 1 250px;
     padding: 15px;
     margin: 0.5rem;
-    /* width: 300px; */
+
     height: max-content;
-    /* background-color: #eee */
   }
   .services-items .bg-image {
     width: auto;
@@ -203,55 +183,45 @@ export const PageWrapper = styled.div`
   .services-items .details p {
     font-weight: 500;
   }
-  #contact {
-    background: #fff;
-    z-index: 999;
-    margin: 2rem 0;
-  }
-  .contact {
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto 0;
-  }
-  .contact .title-contact {
-    display: block;
-
-    font-size: 5vmax;
-    margin: 0 auto;
-  }
-
-  .contact-container {
-    text-align: left;
-    margin: 3rem auto 0;
-    padding: 0 5%;
-    max-width: 100%;
-  }
 
   @media screen and (max-width: 992px) {
     .contact-container {
       width: 90vw;
+    }
+    .services-items {
+      max-width: 600px;
+      margin: 4rem auto;
+    }
+    .service-blurb {
+      max-width: 70vw;
+    }
+    .blurb {
+      max-width: 50vw;
+    }
+    .title {
+      margin: 2rem auto 0;
     }
   }
 
   /* Gallery Page  */
   .title {
     display: flex;
-    max-width: 70vw;
-    margin: 2rem auto 0;
+    width: 70vw;
+    padding: 0 15px;
+    margin: 0;
     font-size: 5vmax;
     line-height: 1.6;
-    /* margin: auto; */
   }
 
-  .image-gallery {
+  .image-gallery ul {
     display: flex;
     flex-wrap: wrap;
     padding: 3rem 5vw;
     margin: 3rem auto 0;
-    /* background: #fff; */
+
     background: linear-gradient(to bottom, #fff, #fff, #fff, #f7f7f7);
   }
-  .image-gallery li {
+  .image-gallery ul li {
     flex: 1 1 25vw;
     margin: 1rem;
     text-decoration: none;
@@ -259,7 +229,7 @@ export const PageWrapper = styled.div`
 
     justify-content: center;
   }
-  .image-gallery li figure img,
+  .image-gallery ul li figure img,
   picture {
     width: 30vw;
   }
@@ -304,5 +274,18 @@ export const PageWrapper = styled.div`
     margin: 4rem auto 1rem;
     font-size: 5vmax;
     line-height: 1.6;
+  }
+  .service-blurb {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: auto;
+  }
+  .blurb {
+    line-height: 1.5;
+    max-width: 100%;
+    word-spacing: 3px;
+    margin: 30px 0;
+    font-size: 1rem;
+    font-weight: 600;
   }
 `

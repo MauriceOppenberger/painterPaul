@@ -21,11 +21,29 @@ export const MenuWrapper = styled.nav`
   }
   ul li {
     list-style: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-weight: 700;
+    transition: all 0.3s;
+  }
+  ul li:hover {
+    transform: scale(1.1);
   }
   ul li a {
     color: var(--mainDark);
     text-decoration: none;
     display: block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
+  .dropdown-content li {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  ul li:hover .dropdown-content {
+    display: block;
+    transition: all 0.3s;
+    transition-delay: 0.2s;
   }
 `

@@ -77,13 +77,19 @@ export const Overlay = styled.div`
       transform: rotate(180deg);
     } */
   }
-  .closeButton svg{
+  .closeButton svg {
     margin: 10vmax 0 5vmax;
-transition: all .8s ease;
+    transition: all 0.8s ease;
 
-     :hover {
+    :hover {
       color: #d22e26;
       transform: rotate(180deg);
     }
+  }
+  .dropdown-content {
+    margin: 25px 0;
+  }
+  .dropdown-content li {
+    list-style: none;
   }
 `

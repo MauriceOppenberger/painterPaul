@@ -2,8 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import ContactForm from "../components/contact/ContactForm"
 import { PageWrapper } from "./styles/Page"
 import BackgroundImage from "gatsby-background-image"
 
@@ -35,12 +33,16 @@ const page = ({ pageContext, data }) => {
             }
           />
           <div className="center">
+            <h2 className="title">
+              {pageContext.title !== "Homepage" ? pageContext.title : null}
+            </h2>
             <div className="content">
               <div
                 className="wp-content"
                 dangerouslySetInnerHTML={{ __html: pageContext.content }}
               />
-              <div>
+
+              {/* <div>
                 <section id="contact">
                   <article>
                     <div class="contact">
@@ -53,7 +55,7 @@ const page = ({ pageContext, data }) => {
                     </div>
                   </article>
                 </section>
-              </div>
+              </div> */}
             </div>
           </div>
         </PageWrapper>
@@ -70,42 +72,32 @@ export const pageQuery = graphql`
           localFile {
             url
             childImageSharp {
-              fluid(quality: 100, maxWidth: 4000) {
+              fluid(quality: 100, maxWidth: 2000) {
                 ...GatsbyImageSharpFluid_withWebp
-                src
               }
             }
           }
         }
-      }
-      acf {
         contactbackground {
           localFile {
             url
             childImageSharp {
               fluid(quality: 100, maxWidth: 1800) {
                 ...GatsbyImageSharpFluid_withWebp
-                src
               }
             }
           }
         }
-      }
-      acf {
         exterioricon {
           localFile {
             url
           }
         }
-      }
-      acf {
         interioricon {
           localFile {
             url
           }
         }
-      }
-      acf {
         additionalicon {
           localFile {
             url
