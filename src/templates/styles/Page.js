@@ -199,7 +199,7 @@ export const PageWrapper = styled.div`
       max-width: 100% !important;
     }
     .title {
-      margin: 0;
+      margin: 0 !important;
     }
   }
 
