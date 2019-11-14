@@ -118,7 +118,7 @@ export const PageWrapper = styled.div`
   }
   .landing .info {
     flex: 1 1 100%;
-
+    margin-top: auto;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: small;
