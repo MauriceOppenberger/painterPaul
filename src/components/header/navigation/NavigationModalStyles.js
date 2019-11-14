@@ -78,7 +78,7 @@ export const Overlay = styled.div`
     } */
   }
   .closeButton svg {
-    margin: 10vmax 0 5vmax;
+    margin: auto 0 5vmax;
     transition: all 0.8s ease;
 
     :hover {
