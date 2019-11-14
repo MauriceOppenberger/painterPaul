@@ -49,19 +49,35 @@ export const FooterWrapper = styled.footer`
     width: 550px;
     margin: auto;
   }
-  .contact-container h2,
-  h3 {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-container .title-contact {
+    flex: 1 100%;
+    font-size: 2.5rem;
     text-align: center;
   }
-  .title-contact {
-    font-size: 3.5vmax;
+  .flex-box {
+    flex: 1 100%;
+    text-align: center;
+    margin: 10px auto;
   }
+
   @media screen and (max-width: 992px) {
     .footer-info p {
       text-align: center !important;
     }
     .inner {
       max-width: 90vw;
+    }
+    .flex-container .title-contact {
+      text-align: left;
+    }
+    .flex-box {
+      text-align: left;
+      margin: 10px auto;
     }
   }
 `

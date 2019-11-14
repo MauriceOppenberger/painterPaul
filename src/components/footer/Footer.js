@@ -8,9 +8,11 @@ const Footer = () => {
       <div className="inner">
         <section id="contact">
           <div className="contact-container">
-            <h2 className="title-contact">Contact Paul</h2>
-
-            <h3> get a free qoute to start the process</h3>
+            <div className="flex-container">
+              <h2 className="title-contact">Contact Paul.</h2>
+              <h3 className="flex-box"> Get a free quote.</h3>
+              <h4 className="flex-box">Start the process.</h4>
+            </div>
             <div className="contact-inner">
               <ContactForm />
             </div>
