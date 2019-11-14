@@ -33,29 +33,14 @@ const page = ({ pageContext, data }) => {
             }
           />
           <div className="center">
-            <h2 className="title">
-              {pageContext.title !== "Homepage" ? pageContext.title : null}
-            </h2>
+            {pageContext.title !== "Homepage" ? (
+              <h2 className="title">{pageContext.title}</h2>
+            ) : null}
             <div className="content">
               <div
                 className="wp-content"
                 dangerouslySetInnerHTML={{ __html: pageContext.content }}
               />
-
-              {/* <div>
-                <section id="contact">
-                  <article>
-                    <div class="contact">
-                      <h2 class="title-contact">Contact Paul</h2>
-                      <br />
-                      <h3> to get free qoute on your project</h3>
-                      <div className="contact-container">
-                        <ContactForm />
-                      </div>
-                    </div>
-                  </article>
-                </section>
-              </div> */}
             </div>
           </div>
         </PageWrapper>
