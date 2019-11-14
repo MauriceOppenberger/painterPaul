@@ -37,7 +37,7 @@ export const FooterWrapper = styled.footer`
   .footer-info {
     display: flex;
     width: 100%;
-    margin: 30px;
+    margin: 10px;
     flex-wrap: wrap;
   }
   #contact {
