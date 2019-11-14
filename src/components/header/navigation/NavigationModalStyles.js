@@ -92,4 +92,7 @@ export const Overlay = styled.div`
   .dropdown-content li {
     list-style: none;
   }
+  .dropdown-content li a {
+    font-size: 1.2rem !important;
+  }
 `

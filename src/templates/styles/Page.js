@@ -200,6 +200,7 @@ export const PageWrapper = styled.div`
     }
     .title {
       margin: 0 !important;
+      width: 100% !important;
     }
   }
 
@@ -219,7 +220,7 @@ export const PageWrapper = styled.div`
     padding: 3rem 5vw;
     margin: 3rem auto 0;
 
-    background: linear-gradient(to bottom, #fff, #fff, #fff, #f7f7f7);
+    background: #fff;
   }
   .image-gallery ul li {
     flex: 1 1 25vw;
