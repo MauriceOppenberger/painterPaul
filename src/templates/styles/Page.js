@@ -193,10 +193,10 @@ export const PageWrapper = styled.div`
       margin: 4rem auto;
     }
     .service-blurb {
-      max-width: 100%;
+      max-width: 100% !important;
     }
     .blurb {
-      max-width: 100%;
+      max-width: 100% !important;
     }
     .title {
       margin: 0;
@@ -280,7 +280,7 @@ export const PageWrapper = styled.div`
     margin: auto;
   }
   .blurb {
-    line-height: 1.5;
+    line-height: 2;
     max-width: 50vw;
     word-spacing: 3px;
     margin: 30px 0;
