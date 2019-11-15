@@ -40,6 +40,11 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <>
+      <script
+        data-ad-client="ca-pub-4730612947723613"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
       <Helmet
         htmlAttributes={{
           lang,

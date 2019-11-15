@@ -22,6 +22,13 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-4730612947723613`,
+      },
+    },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
