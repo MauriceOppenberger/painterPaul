@@ -149,14 +149,14 @@ export const PageWrapper = styled.div`
 
   .services-items div {
     flex: 1 1 250px;
-    padding: 15px;
-    margin: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
 
     height: max-content;
   }
   .services-items .bg-image {
     width: auto;
-    height: 15vmin;
+    height: 10vmin;
     max-height: 250px;
     background: red;
     display: flex;
