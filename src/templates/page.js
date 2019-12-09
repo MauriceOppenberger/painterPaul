@@ -12,7 +12,6 @@ const page = ({ pageContext, data }) => {
   const interiorIcon = homepage.acf.interioricon.localFile.url
   const additionalIcon = homepage.acf.additionalicon.localFile.url
 
-  console.log(pageContext.status)
   return (
     <>
       <SEO
