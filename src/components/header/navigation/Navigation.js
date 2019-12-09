@@ -35,8 +35,6 @@ const navigation = () => {
     }
   `)
 
-  console.log(menu)
-
   return (
     <MenuWrapper>
       <ul>
