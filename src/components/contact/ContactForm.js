@@ -46,6 +46,7 @@ export default function ContactForm() {
         netlify-honeypot="bot-field"
         data-netlify="true"
         onSubmit={handleSubmit}
+        data-netlify-recaptcha="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden">
@@ -77,7 +78,7 @@ export default function ContactForm() {
             <textarea name="message" onChange={handleChange}></textarea>
           </label>
         </p>
-
+        <div data-netlify-recaptcha="true"></div>
         <p>
           <button name="button" type="submit">
             Send
